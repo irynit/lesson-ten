@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1440px;
+  background: #FFFFFF;
+  padding: 0 135px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-img {
+  width: 170px;
+  height: 60px;
+  margin: 10px 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-menu,
+.footer__nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__nav-menu a,
+.footer__nav-menu a {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+}
+
+.header__nav-menu a:hover,
+.footer__nav-menu a:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  color: #18B5DC;
+}
+
+.header__button {
+  width: 130px;
+  height: 42px;
+  padding: 10px 19.5px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  display: flex;
+  border: 1px solid #3C3C3C;
+  background: #FFFFFF;
+  margin: 19px 0;
+}
+
+.header__button:hover {
+  background: #18B5DC;
+  color: #FFFFFF;
+  border: 1px solid #18B5DC;
+  cursor: url(/img/cursor-pointer.png), auto;
+}
+
+.content {
+  max-width: 1440px;
+  background: #F6F6F6;
+  padding: 150px 135px;
+
+}
+
+.content__container {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__top {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 60px;
+  justify-content: space-between;
+  gap: 64px;
+
+}
+
+.content__top-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  position: relative;
+}
+
+.content__top-title::after {
+  content: '';
+  width: 45px;
+  border-bottom: 4px solid #DDDBDB;
+  position: absolute;
+  top: 54px;
+  right: 112px;
+}
+
+.content__top-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3C3C3C;
+}
+
+.content__cart-container {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.content__cart {
+  max-width: 270px;
+}
+
+.content__cart span {
+  display: block;
+}
+
+.content__cart-img {
+  max-width: 270px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content__cart-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url(/img/bg.png);
+  display: none;
+}
+
+.content__cart-img:hover .content__cart-hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 270px;
+}
+
+.content__cart-hover img {
+  height: 42px;
+  width: 42px;
+}
+
+.content__cart-hover-twitter {
+  width: 42px;
+  height: 42px;
+  background: url(/img/twitter-cart-hover.png);
+}
+
+.content__cart-hover-twitter:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/twitter.png);
+}
+
+.content__cart-hover-facebook {
+  width: 42px;
+  height: 42px;
+  background: url(/img/facebook-cart-hover.png);
+}
+
+.content__cart-hover-facebook:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/facebook.png);
+}
+
+.content__cart-hover-instagram {
+  width: 42px;
+  height: 42px;
+  background: url(/img/instagram-cart-hover.png);
+}
+
+.content__cart-hover-instagram:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/instagram.png);
+}
+
+.content__cart-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+}
+
+.content__cart-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #646464;
+}
+
+.footer {
+  max-width: 1440px;
+
+  background: #FFFFFF;
+
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 135px;
+  gap: 20px;
+
+}
+
+.footer__img {
+  width: 170px;
+  height: 60px;
+}
+
+.footer__social-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 250px;
+}
+
+.footer__social-img span {
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__social-img-twitter {
+  background: url(/img/twitter.png);
+}
+
+.footer__social-img-twitter:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/twitter-hover.png);
+}
+
+.footer__social-img-facebook {
+  background: url(/img/facebook.png);
+}
+
+.footer__social-img-facebook:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/facebook-hover.png);
+}
+
+.footer__social-img-instagram {
+  background: url(/img/instagram.png);
+}
+
+.footer__social-img-instagram:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/instagram-hover.png);
+}
+
+.footer__social-img-linkedin {
+  background: url(/img/linkedin.png);
+}
+
+.footer__social-img-linkedin:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/linkedin-hover.png);
+}
+
+.footer__social-img-telegram {
+  background: url(/img/telegram.png);
+}
+
+.footer__social-img-telegram:hover {
+  cursor: url(/img/cursor-pointer.png), auto;
+  background: url(/img/telegram-hover.png);
+}
